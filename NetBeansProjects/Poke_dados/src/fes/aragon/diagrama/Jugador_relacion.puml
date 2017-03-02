@@ -1,0 +1,42 @@
+@startuml
+class Equipo{
+    -static int nombreDeEquipo
+    -Jugador[] jugadores=Jugador[]
+    -int numeroDeJugadores=5
+    -int jugadoresRestantes
+    -int indiceDelJugador=0
+    -String nombreEquipo
+    +Equipo()
+    +Equipo(String nombre,Jugador[] jugadores)
+    -iniciarVariables()
+    +cambiarVariables()
+    +int getJugadoresRestantes()
+    +Jugador getJugador()
+}
+class Jugador{
+    -static int numeroDeJugadores
+    -int numeroDados
+    -Dado[] dados=Dados[]
+    -String nombre
+    -int dadosValidos
+    -int indiceDelDado
+    +Jugador()
+    +Jagador(String nombre)
+    +int tirar()
+    +String getnombre()
+    +int getDadosValidos()
+    +void cambioDeValores()
+    -void inicioDevariables()
+}
+class Dado{
+    -int valorCara
+    -boolean vuelvesATirar=true
+    +Dado()
+    +tirar()
+    +int getValorCara()
+    +boolean isVuelvesATirar()
+    +void setVuelvesATirar(boolean vuelvesATirar)
+}
+Jugador *-- Dado
+Equipo "1" -- "5" Jugador
+@enduml

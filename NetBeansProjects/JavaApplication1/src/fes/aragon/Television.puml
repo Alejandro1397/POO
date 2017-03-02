@@ -1,0 +1,9 @@
+@startuml
+class television{
+-String marca
+-float tamano
+-float peso
++void mostrarImagen()
++void sonido()
+}
+@enduml

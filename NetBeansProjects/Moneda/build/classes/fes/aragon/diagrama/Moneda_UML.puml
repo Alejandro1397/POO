@@ -1,0 +1,8 @@
+@startuml
+class Moneda{
+    -int valorCara
+    +Moneda()
+    +void lanzar()
+    +int getValorCara()
+}
+@enduml

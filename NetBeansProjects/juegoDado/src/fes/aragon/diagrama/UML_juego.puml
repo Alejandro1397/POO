@@ -1,0 +1,10 @@
+@startuml
+class Dado{
+-int valorCara
+-boolean vuelvesATirar=true
++Dado()
++tirar()
++int getValorCara()
++boolean getVuelvesATirar()
+}
+@enduml

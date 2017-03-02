@@ -1,0 +1,14 @@
+@startuml
+class celular{
+-String marca
+-String modelo
+-float precio
+-String memoria
++Celular()
++String setMarca()
++String setModelo()
++float setPrecio()
++String setMemoria()
++muestraCaracteristicas()
+}
+@enduml

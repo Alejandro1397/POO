@@ -1,0 +1,8 @@
+@startuml
+class dado{
+-int valorCara
++Dado()
++tirar()
++int getValorCara()
+}
+@enduml
